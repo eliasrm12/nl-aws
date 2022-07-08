@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="eliasrm12">
+	<meta name="theme-color" content="#e9e8e6">
+	<meta name="description" content="Terrarios, cactus y suculentas como una terapia.">
+	<meta property="og:image" content="img/icons/icon-512.png">
+	<link rel="apple-touch-icon" href="img//icons/icon-192.png">
+	<link rel="shortcut icon" href="img/natural-love.ico">
+	<link rel="manifest" href="naturallove.webmanifest">
+	<title>Natural Love</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" href="bridge.css">
+</head>
+<body>
+	<div id="app">
+
+		<!--***********************
+			Header - Nav - links
+			$2y$10$N9RNFykLdhcl5vJiI05ecOa7XuQWny8h7TP6aL6HvRAx7A8TzVt9u
+			************************-->
+		<header>
+			<a href="./"><img src="img/logo.svg" alt="logo" id="logo"></a>
+			
+			<nav>
+				<ul>
+					<li><a href="#/"><i class='material-icons'>home</i>Inicio</a></li>
+					<li><a href="#/gallery"><i class='material-icons'>perm_media</i>Galería</a></li>
+					<li><a href="#/blog"><i class='material-icons'>chat</i>Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!--*****************************************
+			Boton de Agregar al inicio del dispositivo
+			*******************************************-->
+		<div id='installer'>
+			<button class='button' id="install">Instalar en el dispositivo</button>
+		</div>
+
+		<!--*****************************************
+			Elemeto al que se le agregaran las secciones
+			*******************************************-->
+		<div id="view"></div>
+
+		<!--*****************************************
+			Seccion de contacto
+			*******************************************-->
+		<section id="contact">
+			<h2>Contact</h2>
+			<div id="boxs">
+				<a href="https://wa.me/50687808401" target="_blanck"><div class="social">
+					<div class="logo" id="whatsapp"></div>
+				</div></a>
+				<a href="https://www.facebook.com/silvia.rojasmora" target="_blanck"><div class="social">
+					<div class="logo" id="facebook"></div>
+				</div></a>
+				<a href="https://www.instagram.com/silvia.rojasmora" target="_blanck"><div class="social">
+					<div class="logo" id="instagram"></div>
+				</div></a>
+			</div>
+		</section>
+
+		<!--*****************************************
+			Seccion del footer
+			*******************************************-->
+		<footer><p>COPYRIGHT © Natural Love. TODOS LOS DERECHOS RESERVADOS.</p></footer>
+	</div>
+	
+
+	 <!-- <script src="js/service_worker_installer.js"></script> -->
+	<script src="js/spa.js"></script>
+	<script src="js/routes.js"></script>
+		
+
+	<script>
+
+		window.addEventListener('blur',function(){
+			document.title = 'Aquí te espero ^_^';
+		});
+
+		window.addEventListener('focus',function(){
+			document.title = 'Hola de nuevo ^_^';
+			setTimeout(()=>{
+				document.title = 'Natural Love';
+			},1000);
+		});
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,14 @@
+ErrorDocument 404 /page404.html
+
+
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
+<FilesMatch "\.(html|htm|rtf|rtx|svg|svgz|txt|xsd|xsl|xml|json|HTML|HTM|RTF|RTX|SVG|SVGZ|TXT|XSD|XSL|XML|JSON)$">
+    FileETag MTime Size
+    <IfModule mod_headers.c>
+        Header set Cache-Control "no-cache"
+    </IfModule>
+</FilesMatch>

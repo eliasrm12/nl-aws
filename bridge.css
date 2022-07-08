@@ -1,0 +1,25 @@
+
+/*
+------------------------
+RESET
+------------------------
+*/
+@import url(css/reset.css);
+
+/*
+------------------------
+STYLES
+------------------------
+*/
+@import url(css/style.css);
+@import url(css/login.css);
+@import url(css/home.css);
+@import url(css/gallery.css);
+@import url(css/blog.css);
+
+/*
+------------------------
+RESPONSIVE
+------------------------
+*/
+@import url(css/responsive.css);
